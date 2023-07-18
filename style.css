@@ -30,18 +30,17 @@ font-size: 1.8rem;
 font-weight: 700;
 }
 .highlight{
-
+color: #FF42A5;
 }
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 200px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     max-width: 1530px;
     margin: 0 auto;
-    padding: 0px 200px;
+    padding: 0% 10%;
 }
 .nav-button{
     color: #3C354F;
@@ -55,5 +54,35 @@ font-weight: 700;
     background: rgba(11, 2, 35, 0.10);
     border-style: none;
     padding:12px 20px;
+
+}
+.nav-button img{
+    width: 10%;
+}
+
+
+
+
+
+/* tablet or mobile devices */
+@media screen and (max-width:623px){
+    .navbar,
+    .nav-item-container{
+       flex-direction: column;
+    }
+    .nav-button{
+        gap: 10px;
+        padding: 4px 9px;
+    }
+
+    .nav-item-container{
+        gap: 10px;
+    }
+
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:623px) and (max-width:768px){
 
 }
