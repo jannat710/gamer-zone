@@ -83,6 +83,10 @@ font-weight: 600;
 .play-description > h1{
     font-size: 4rem;
 font-weight: 800;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
 }
 .play-description > p{
@@ -126,8 +130,9 @@ font-weight: 600;
     .play-container{
         flex-direction: column-reverse;
     }
-    .play-container img{
-
+    .playing-image{
+        border: 2px solid blue;
+        width: 90%;
     }
     .nav-button{
         gap: 10px;
@@ -136,6 +141,11 @@ font-weight: 600;
 
     .nav-item-container{
         gap: 10px;
+    }
+    .play-description{
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid blue;
     }
 
 
