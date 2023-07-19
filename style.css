@@ -77,7 +77,7 @@ main{
 }
 .play-description h2{
     color: #0B0223;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 font-weight: 600;
 }
 .play-description > h1{
@@ -113,18 +113,87 @@ font-weight: 600;
 .btn1{
     background: #4EC5F7;
 }
+/* videos style */
+.videos-title{
+    color: #0B0223;
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
+}
+.item{
+    color: #534C64;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+}
+.light{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 
 
 
 
 
+/* play instantly styles */
+.instant-title{
+    color: #0B0223;
+font-size: 2.5rem;
+font-weight: 700;
+text-align:right;
 
-/* tablet or mobile devices */
+}
+.item2{
+    color: #534C64;
+text-align: right;
+font-size: 1rem;
+font-weight: 400;
+}
+.instant-highlight{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.instant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.intant-text{
+    width: 50%;
+    padding-right: 150px;
+    padding-left: 60px;
+}
+.instant-image{
+    width: 50%;
+    position: relative;
+}
+.instant-image >img{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.square img{
+height: 35%;
+width: 28%;
+position:absolute;
+bottom : -15%;
+left: -9%;
+}
+
+
+/* mobile devices */
 @media screen and (max-width:623px){
     .navbar,
     .nav-item-container,
-    .play-container{
+    .play-container,
+    .instant{
        flex-direction: column;
     }
     .play-container{
@@ -147,15 +216,41 @@ font-weight: 600;
         margin: 0 auto;
         border: 2px solid blue;
     }
+    /* funny videos */
+    .videos-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .videos-title{
+        font-size: 1.5rem;
+    }
+    .item{
+        font-size: 0.6rem;
+    }
+    .intant-text,
+    .instant-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .instant-title, .item2{
+        text-align: center;
+    }
+    .intant-text{
+        width: 80%;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
 
 
 }
+
+
+
 
 /* tablet or medium devices */
 @media screen and (min-width:623px) and (max-width:768px){
     .navbar,
     .nav-item-container,
-    .play-container{
+    .play-container,.instant{
        flex-direction: column;
     }
     .logo-container{
@@ -182,5 +277,9 @@ font-weight: 600;
         margin: 0 auto;
         border: 2px solid blue;
     }
+        /* funny videos */
+        .videos-container{
+            grid-template-columns: repeat(1,1fr);
+        }
 
 }
