@@ -181,19 +181,23 @@ main {
     cursor: pointer;
     overflow: hidden;
 }
+.image{
+    width: 100%;
+    margin: 0 auto;
+}
 .text{
     font-size: 1rem;
     top: 139%;
 
     position: absolute;
     background: #3C354F;
-    width: 300px;
+    width: 310px;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #81114b;
+    color: #3c0202;
     opacity: .8;
     visibility: hidden;
     border: 2px solid #a00e61;
@@ -444,6 +448,9 @@ li {
         font-size: .5rem;
         gap: 5px;
     }
+    .videos:hover .text {
+        visibility: hidden;
+    }
 
     /* footer */
     .footer-logo {
@@ -530,6 +537,9 @@ li {
     }
     .videos-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .videos:hover .text {
+        visibility: hidden;
     }
 
 }
