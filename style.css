@@ -186,6 +186,41 @@ position:absolute;
 bottom : -15%;
 left: -9%;
 }
+/* games styles */
+.games-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10%;
+}
+.primary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 20px;
+    padding: 10px 15px;
+    border-style: none;
+}
+.primary:hover{
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+}
+
+.games-images{
+    width: 30px;
+}
+/* .games-name{
+    color: #0B0223;
+font-size: 1rem;
+font-weight: 600;
+} */
+
 
 
 /* mobile devices */
@@ -239,6 +274,14 @@ left: -9%;
         padding-right: 2px;
         padding-left: 2px;
     }
+    .games-container{
+        padding: 10px;
+        gap: 10px;
+    }
+    .primary{
+        padding: 2px 2px;
+    }
+
 
 
 }
