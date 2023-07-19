@@ -153,5 +153,34 @@ font-weight: 600;
 
 /* tablet or medium devices */
 @media screen and (min-width:623px) and (max-width:768px){
+    .navbar,
+    .nav-item-container,
+    .play-container{
+       flex-direction: column;
+    }
+    .logo-container{
+        justify-content: center;
+
+    }
+    .play-container{
+        flex-direction: column-reverse;
+    }
+    .playing-image{
+        border: 2px solid blue;
+        width: 90%;
+    }
+    .nav-button{
+        gap: 10px;
+        padding: 4px 9px;
+    }
+
+    .nav-item-container{
+        gap: 10px;
+    }
+    .play-description{
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid blue;
+    }
 
 }
