@@ -148,7 +148,7 @@ main {
 }
 
 /* videos style */
-.videos-title {
+/* .videos-title {
     color: #0B0223;
     text-align: center;
     font-size: 3rem;
@@ -162,14 +162,12 @@ main {
     font-weight: 400;
 }
 
-.light {
+.light,.instant-highlight {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 .videos-container{
     display: grid;
@@ -216,10 +214,68 @@ main {
 }
 .videos:hover .text{
     visibility: visible;
+} */
+
+
+.content {
+
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .content:hover .image {
+    opacity: 0.3;
+  }
+  
+  .content:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(235, 15, 118);
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 
+.div1{
+    padding: 15px;
+    
+}
 
+.funny-videos-section{
+    padding: 10%;
+}
 
 
 /* play instantly styles */
@@ -238,12 +294,6 @@ main {
     font-weight: 400;
 }
 
-.instant-highlight {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .instant {
     display: flex;
@@ -419,19 +469,8 @@ li {
     }
 
     /* funny videos */
-    .videos-container {
+    .container{
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .videos-title {
-        font-size: 1.5rem;
-    }
-    .videos{
-        padding: 40px;
-        border: none;
-    }
-    .videos-container{
-        gap: 1px;
     }
 
     .item {
