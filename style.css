@@ -199,8 +199,8 @@ main {
 
 .content:hover .image {
     opacity: 0.3;
-    border: 3px solid #F948B2;
-    border-radius: 5.5%;
+    border: 5px solid #ca1f86;
+    border-radius: 6.5%;
 }
 
 .content:hover .middle {
