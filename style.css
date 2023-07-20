@@ -5,7 +5,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-
 /* navbar styles */
 .logo-container {
     width: 50%;
@@ -67,7 +66,6 @@
     background: rgba(11, 2, 35, 0.10);
     border-style: none;
     padding: 12px 20px;
-
 }
 
 .nav-button img {
@@ -109,9 +107,9 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
-.fix-positon{
+
+.fix-positon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,49 +144,51 @@ main {
 .btn1 {
     background: #4EC5F7;
 }
+
 /* funny videos style */
 
-.videos-title{
+.videos-title {
     color: #0B0223;
-text-align: center;
-font-size: 3rem;
-font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
 }
-.about{
+
+.about {
     color: #534C64;
-text-align: center;
-font-size: 1.1rem;
-font-weight: 400;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
-.effect{
+
+.effect {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.videos-description{
+
+.videos-description {
     color: #534C64;
-font-size: 1.1rem;
-font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .content {
-
     position: relative;
     width: 100%;
-    
-  }
-  
-  .image {
+}
+
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .middle {
+}
+
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -197,41 +197,35 @@ font-weight: 500;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .content:hover .image {
+}
+
+.content:hover .image {
     opacity: 0.3;
-  }
-  
-  .content:hover .middle {
+}
+
+.content:hover .middle {
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.text {
     color: #FF42A5;
     font-size: 16px;
     padding: 16px 32px;
-  }
+}
 
-
-
-
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-
-.div1{
+.div1 {
     padding: 15px;
-    
 }
 
-.funny-videos-section{
+.funny-videos-section {
     padding: 10%;
 }
-
 
 /* play instantly styles */
 .instant-title {
@@ -239,7 +233,6 @@ font-weight: 500;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: right;
-
 }
 
 .item2 {
@@ -248,7 +241,6 @@ font-weight: 500;
     font-size: 1rem;
     font-weight: 400;
 }
-
 
 .instant {
     display: flex;
@@ -390,8 +382,8 @@ li {
     .navbar,
     .nav-item-container,
     .play-container,
-    .instant ,
-    .list-item{
+    .instant,
+    .list-item {
         flex-direction: column;
     }
 
@@ -416,21 +408,25 @@ li {
         width: 80%;
         margin: 0 auto;
     }
-    .play-description > h1 {
+
+    .play-description>h1 {
         font-size: 2.5rem;
     }
-    .play-description > h2 {
+
+    .play-description>h2 {
         font-size: 2rem;
     }
 
     /* funny videos */
-    .videos-title{
+    .videos-title {
         font-size: 1.6rem;
     }
-    .about{
+
+    .about {
         font-size: 0.7rem;
     }
-    .container{
+
+    .container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -467,14 +463,16 @@ li {
         font-size: .5rem;
         gap: 5px;
     }
+
     .videos:hover .text {
         visibility: hidden;
     }
 
     /* footer */
-    .footer-title{
+    .footer-title {
         font-size: 1.5rem;
     }
+
     .footer-logo {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -487,10 +485,9 @@ li {
         padding: 0;
         font-size: .9rem;
         padding-bottom: 20px;
-
-
     }
-    .link img{
+
+    .link img {
         width: 7%;
     }
 
@@ -499,11 +496,13 @@ li {
         font-size: .6rem;
         text-align: center;
     }
+
     .footer-logo>img {
         width: 50px;
         height: 40px;
     }
-    ol.footer-list{
+
+    ol.footer-list {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -561,7 +560,8 @@ li {
     .item2 {
         text-align: center;
     }
-    .container{
+
+    .container {
         grid-template-columns: repeat(1, 1fr);
     }
 
