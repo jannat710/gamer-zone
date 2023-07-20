@@ -111,6 +111,12 @@ main {
     -webkit-text-fill-color: transparent;
 
 }
+.fix-positon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+}
 
 .play-description>p {
     color: #534C64;
@@ -305,7 +311,7 @@ main {
 }
 
 .footer-section {
-    max-width: 1500px;
+    max-width: 1530px;
     margin: 0 auto;
     background: #0B0223;
     text-align: center;
