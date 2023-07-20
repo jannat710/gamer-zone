@@ -146,76 +146,31 @@ main {
 .btn1 {
     background: #4EC5F7;
 }
+/* funny videos style */
 
-/* videos style */
-/* .videos-title {
+.videos-title{
     color: #0B0223;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
 }
-
-.item {
+.about{
     color: #534C64;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
+text-align: center;
+font-size: 1.1rem;
+font-weight: 400;
 }
-
-.light,.instant-highlight {
+.effect{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
-
-.videos-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.videos-description{
+    color: #534C64;
+font-size: 1.1rem;
+font-weight: 500;
 }
-.videos{
-    border: 1px solid rgb(196, 140, 244);
-    padding: 10px;
-    border-radius: 10px;
-}
-.videos img{
-    width: 100%;
-}
-.image{
-    position: relative;
-    width: 300px;
-    height: 350px;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 8px;
-}
-.image{
-    width: 100%;
-    margin: 0 auto;
-}
-.text{
-    font-size: 1rem;
-    top: 139%;
-    font-weight: 800;
-    position: absolute;
-    background: #3C354F;
-    width: 310px;
-    height: 348px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #FF42A5 ;
-    opacity: .8;
-    visibility: hidden;
-    border: 4px solid #c7279f;
-    border-radius: 10px;
-}
-.videos:hover .text{
-    visibility: visible;
-} */
-
 
 .content {
 
@@ -253,7 +208,7 @@ main {
   }
   
   .text {
-    color: rgb(235, 15, 118);
+    color: #FF42A5;
     font-size: 16px;
     padding: 16px 32px;
   }
@@ -469,6 +424,12 @@ li {
     }
 
     /* funny videos */
+    .videos-title{
+        font-size: 1.6rem;
+    }
+    .about{
+        font-size: 0.7rem;
+    }
     .container{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -550,9 +511,6 @@ li {
     .copyright {
         font-size: .7rem;
     }
-    .videos-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 
@@ -596,10 +554,6 @@ li {
     }
 
     /* funny videos */
-    .videos-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     .instant-title {
         text-align: center;
     }
@@ -607,11 +561,8 @@ li {
     .item2 {
         text-align: center;
     }
-    .videos-container{
+    .container{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .videos:hover .text {
-        visibility: hidden;
     }
 
 }
